@@ -1,0 +1,129 @@
+<!-- Example Database -->
+<EXAMPLES>
+
+	<DESCRIPTION>
+		<SHORT></SHORT>
+		<DETAILED></DETAILED>
+	</DESCRIPTION>
+
+	<!-- Parameter Definition -->
+	<PARAMETER type="input">price</PARAMETER>
+	<PARAMETER type="input">maint-cost</PARAMETER>
+	<PARAMETER type="input">doors</PARAMETER>
+	<PARAMETER type="input">persons</PARAMETER>
+	<PARAMETER type="input">trunk-size</PARAMETER>
+	<PARAMETER type="input">safety</PARAMETER>
+	<PARAMETER type="output">acceptable</PARAMETER>
+
+	<!-- Examples -->
+	<EXAMPLE type="testing">
+		<VALUE parameter="price">high</VALUE>
+		<VALUE parameter="maint-cost">high</VALUE>
+		<VALUE parameter="doors">2</VALUE>
+		<VALUE parameter="persons">2</VALUE>
+		<VALUE parameter="trunk-size">big</VALUE>
+		<VALUE parameter="safety">high</VALUE>
+		<VALUE parameter="acceptable">unacc</VALUE>
+	</EXAMPLE>
+
+	<EXAMPLE type="testing">
+		<VALUE parameter="price">vhigh</VALUE>
+		<VALUE parameter="maint-cost">low</VALUE>
+		<VALUE parameter="doors">3</VALUE>
+		<VALUE parameter="persons">2</VALUE>
+		<VALUE parameter="trunk-size">big</VALUE>
+		<VALUE parameter="safety">high</VALUE>
+		<VALUE parameter="acceptable">unacc</VALUE>
+	</EXAMPLE>
+	
+	<EXAMPLE type="testing">
+		<VALUE parameter="price">vhigh</VALUE>
+		<VALUE parameter="maint-cost">low</VALUE>
+		<VALUE parameter="doors">5more</VALUE>
+		<VALUE parameter="persons">more</VALUE>
+		<VALUE parameter="trunk-size">big</VALUE>
+		<VALUE parameter="safety">high</VALUE>
+		<VALUE parameter="acceptable">acc</VALUE>
+	</EXAMPLE>
+
+	<EXAMPLE type="testing">
+		<VALUE parameter="price">low</VALUE>
+		<VALUE parameter="maint-cost">low</VALUE>
+		<VALUE parameter="doors">2</VALUE>
+		<VALUE parameter="persons">more</VALUE>
+		<VALUE parameter="trunk-size">small</VALUE>
+		<VALUE parameter="safety">low</VALUE>
+		<VALUE parameter="acceptable">unacc</VALUE>
+	</EXAMPLE>
+
+	<EXAMPLE type="testing">
+		<VALUE parameter="price">low</VALUE>
+		<VALUE parameter="maint-cost">low</VALUE>
+		<VALUE parameter="doors">5more</VALUE>
+		<VALUE parameter="persons">more</VALUE>
+		<VALUE parameter="trunk-size">small</VALUE>
+		<VALUE parameter="safety">low</VALUE>
+		<VALUE parameter="acceptable">unacc</VALUE>
+	</EXAMPLE>
+
+	<EXAMPLE type="testing">
+		<VALUE parameter="price">low</VALUE>
+		<VALUE parameter="maint-cost">low</VALUE>
+		<VALUE parameter="doors">5more</VALUE>
+		<VALUE parameter="persons">more</VALUE>
+		<VALUE parameter="trunk-size">big</VALUE>
+		<VALUE parameter="safety">low</VALUE>
+		<VALUE parameter="acceptable">unacc</VALUE>
+	</EXAMPLE>
+
+	<EXAMPLE type="testing">
+		<VALUE parameter="price">low</VALUE>
+		<VALUE parameter="maint-cost">med</VALUE>
+		<VALUE parameter="doors">5more</VALUE>
+		<VALUE parameter="persons">more</VALUE>
+		<VALUE parameter="trunk-size">big</VALUE>
+		<VALUE parameter="safety">med</VALUE>
+		<VALUE parameter="acceptable">good</VALUE>
+	</EXAMPLE>
+
+	<EXAMPLE type="testing">
+		<VALUE parameter="price">low</VALUE>
+		<VALUE parameter="maint-cost">med</VALUE>
+		<VALUE parameter="doors">5more</VALUE>
+		<VALUE parameter="persons">more</VALUE>
+		<VALUE parameter="trunk-size">big</VALUE>
+		<VALUE parameter="safety">high</VALUE>
+		<VALUE parameter="acceptable">vgood</VALUE>
+	</EXAMPLE>
+
+	<EXAMPLE type="testing">
+		<VALUE parameter="price">med</VALUE>
+		<VALUE parameter="maint-cost">low</VALUE>
+		<VALUE parameter="doors">5more</VALUE>
+		<VALUE parameter="persons">more</VALUE>
+		<VALUE parameter="trunk-size">big</VALUE>
+		<VALUE parameter="safety">high</VALUE>
+		<VALUE parameter="acceptable">vgood</VALUE>
+	</EXAMPLE>
+
+	<EXAMPLE type="testing">
+		<VALUE parameter="price">high</VALUE>
+		<VALUE parameter="maint-cost">low</VALUE>
+		<VALUE parameter="doors">2</VALUE>
+		<VALUE parameter="persons">2</VALUE>
+		<VALUE parameter="trunk-size">small</VALUE>
+		<VALUE parameter="safety">high</VALUE>
+		<VALUE parameter="acceptable">unacc</VALUE>
+	</EXAMPLE>
+
+	<EXAMPLE type="testing">
+		<VALUE parameter="price">high</VALUE>
+		<VALUE parameter="maint-cost">low</VALUE>
+		<VALUE parameter="doors">2</VALUE>
+		<VALUE parameter="persons">2</VALUE>
+		<VALUE parameter="trunk-size">small</VALUE>
+		<VALUE parameter="safety">high</VALUE>
+		<VALUE parameter="acceptable">unacc</VALUE>
+	</EXAMPLE>
+
+</EXAMPLES>
