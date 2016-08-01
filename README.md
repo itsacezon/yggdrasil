@@ -23,9 +23,3 @@ Requirements
 ------------
 
 + Python >= 2.7
-
-
-To-do
------
-
-+ Compatibility with Python 2.6 below
